@@ -9,7 +9,13 @@ section {
   height: 100vh;
 }
 
+#navigator{
+  height: 12vh;
+  background-color: gray;
+}
+
 .home {
+  height: 88vh;
   background-color: red;
 }
 
