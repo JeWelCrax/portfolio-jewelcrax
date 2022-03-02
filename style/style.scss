@@ -1,0 +1,42 @@
+// Colour pallet
+
+$blue : #200D97;
+$darkpink : #A30DBC;
+$red : #D92A2A;
+$text : #000000;
+
+
+// General styling
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+
+    height: 100vh;
+
+}
+
+.home{
+    background-color: red;
+}
+
+.about {
+    background-color: blue;
+}
+
+.skills{
+    background-color: purple;
+}
+
+.languages{
+    background-color: yellow;
+}
+
+.drive{
+    background-color: green;
+}
