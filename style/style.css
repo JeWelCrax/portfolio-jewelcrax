@@ -7,10 +7,23 @@ body {
 
 section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#navigator {
+  height: 12vh;
+  background-color: pink;
 }
 
 .home {
   background-color: red;
+  height: 88vh;
 }
 
 .about {
@@ -27,5 +40,34 @@ section {
 
 .drive {
   background-color: green;
+}
+
+.left {
+  background-color: rgba(255, 145, 0, 0.459);
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.right {
+  background-color: rgba(128, 128, 128, 0.541);
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+#footer {
+  height: 12vh;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
