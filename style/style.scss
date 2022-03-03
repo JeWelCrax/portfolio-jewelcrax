@@ -50,7 +50,7 @@ section {
   height: 100%;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
+  flex-basis: 0;
 }
 
 .right {
@@ -58,10 +58,22 @@ section {
   height: 100vh;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
+  flex-basis: 0;
 }
 
 #footer {
   height: 12vh;
   background-color: black;
+}
+
+.text{
+
+}
+
+.image{
+  
+}
+
+.image img{
+  width: 100%;
 }
