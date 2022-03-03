@@ -58,7 +58,6 @@ header {
 nav {
   height: 12vh;
   background-color: pink;
-  position: fixed;
 
   ul {
     display: grid;
@@ -130,4 +129,16 @@ footer {
 
 .drive {
   background-color: green;
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 600px){
+
+  .image{
+    display: none;
+  }
+
 }

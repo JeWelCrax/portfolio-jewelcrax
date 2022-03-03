@@ -51,7 +51,6 @@ header .bodyHeader p {
 nav {
   height: 12vh;
   background-color: pink;
-  position: fixed;
 }
 
 nav ul {
@@ -130,5 +129,11 @@ footer {
 
 .drive {
   background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
