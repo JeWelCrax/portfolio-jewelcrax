@@ -28,6 +28,7 @@ section {
 
   p{
     font-size: $fontsizeP;
+    padding-bottom: 2rem;
   }
 
   .left {
@@ -46,6 +47,17 @@ section {
 
   .textUnderline{
     text-decoration: underline;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+
+  h2{
+    padding-bottom: 2rem;
   }
 }
 
@@ -113,27 +125,6 @@ nav {
   }
 }
 
-// Skills
-
-.skills {
-  background-color: purple;
-
-  .textSkills {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-  }
-
-  h2{
-    padding-bottom: 2rem;
-  }
-
-  p{
-    padding-bottom: 2rem;
-  }
-
-}
 
 .image {
   display: flex;

@@ -22,6 +22,7 @@ section h2 {
 
 section p {
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 section .left {
@@ -40,6 +41,26 @@ section .left, section .right {
 
 section .textUnderline {
   text-decoration: underline;
+}
+
+section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section h2 {
+  padding-bottom: 2rem;
 }
 
 header {
@@ -108,34 +129,6 @@ nav ul li:nth-of-type(5) img {
 nav ul li:last-of-type {
   text-align: right;
   margin-right: 2rem;
-}
-
-.skills {
-  background-color: purple;
-}
-
-.skills .textSkills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skills h2 {
-  padding-bottom: 2rem;
-}
-
-.skills p {
-  padding-bottom: 2rem;
 }
 
 .image {
