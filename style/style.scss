@@ -74,9 +74,9 @@ header {
 // Section
 section {
   // LAST CHANGE
-  height: 70vh; //  HERE
+  height: 100vh; //  HERE
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 
   strong {
     background: -webkit-linear-gradient(
@@ -140,7 +140,7 @@ nav {
 
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -177,10 +177,12 @@ nav {
 }
 
 // Footer
-footer {
-  height: 12vh;
-  // background-color: black;
-  text-align: center;
+footer img {
+  position: fixed;
+  right: 0.5%;
+  bottom: 1%;
+  height: 5vh;
+  opacity: 0.7;
 }
 
 // MEDIA QUERIES
@@ -190,10 +192,6 @@ footer {
     height: 12vh;
 
     ul {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      margin: 0;
-
       li:first-of-type,
       li:last-of-type {
         margin: auto;
@@ -234,46 +232,29 @@ footer {
 @media screen and (max-width: 900px) {
   // Section
   section {
-    height: 100vh;
-    display: grid;
     display: flex;
     flex-direction: column;
 
     h2 {
       font-size: 3rem;
-      text-decoration: underline;
     }
 
     p {
       font-size: 1.5rem;
-      padding-bottom: 2rem;
     }
 
     .left {
       background-color: rgba(255, 145, 0, 0.459);
-      height: 100vh;
     }
 
     .right {
       background-color: rgba(128, 128, 128, 0.541);
-      height: 100vh;
     }
 
     .left,
     .right {
       padding-left: 3rem;
       padding-right: 3rem;
-    }
-
-    .textUnderline {
-      text-decoration: underline;
-    }
-
-    .text {
-      display: flex;
-      justify-content: center;
-      align-items: left;
-      flex-direction: column;
     }
   }
 
