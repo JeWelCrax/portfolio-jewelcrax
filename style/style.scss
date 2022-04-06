@@ -4,7 +4,7 @@ $darkpink: #440150;
 $red: #d92a2a;
 $text: #000000;
 $fontsizeH2: 4rem;
-$fontsizeP: 2rem;
+$fontsizeP: 1.4rem;
 
 // General styling
 * {
@@ -27,7 +27,7 @@ header {
     height: 45%;
   }
 
-  #floatingText {
+  #waveFormHomeRight {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -47,7 +47,7 @@ header {
 
       background: -webkit-linear-gradient(
         180deg,
-        rgba(163, 13, 188, 1),
+        rgb(215, 0, 253),
         rgba(32, 13, 151, 0.69)
       );
       -webkit-background-clip: text;
@@ -74,7 +74,7 @@ header {
 // Section
 section {
   // LAST CHANGE
-  height: 100vh; //  HERE
+  height: 85vh; //  HERE
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -205,7 +205,7 @@ footer img {
       max-width: 100%;
     }
 
-    #floatingText {
+    #waveFormHomeRight {
       display: none;
     }
 
@@ -279,7 +279,7 @@ footer img {
       height: 55%;
     }
 
-    #floatingText {
+    #waveFormHomeRight {
       display: none;
     }
 
