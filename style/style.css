@@ -193,18 +193,28 @@ footer img {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
   section {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section .left {
     height: 100vh;
+    padding-left: 3rem;
   }
   section .right {
     height: 100vh;
   }
-  section .left {
+  section .left,
+  section .right {
     padding-left: 3rem;
+    padding-right: 3rem;
   }
   section .textUnderline {
     text-decoration: underline;
@@ -238,8 +248,17 @@ footer img {
     max-width: 100%;
     opacity: 0.6;
   }
+  section h2 {
+    font-size: 2.8rem;
+  }
+  section p {
+    font-size: 1.2rem;
+  }
   nav {
     height: 12vh;
+  }
+  nav ul li img {
+    height: 3.5rem;
   }
   nav ul li:first-of-type,
   nav ul li:last-of-type {
@@ -247,6 +266,7 @@ footer img {
   }
   header #waveformHome {
     max-width: 100%;
+    height: 55%;
     z-index: -1;
   }
   header #waveFormHomeRight {
@@ -254,7 +274,7 @@ footer img {
     z-index: -2;
   }
   header .bodyHeader h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
   }
   header .bodyHeader #smallTextHome {
     font-size: 1rem;
@@ -266,55 +286,8 @@ footer img {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-}
-
-@media screen and (max-width: 700px) {
-  section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section h2 {
-    font-size: 3rem;
-  }
-  section p {
-    font-size: 1.2rem;
-  }
-  section .left,
-  section .right {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
   .image {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  nav ul li img {
-    height: 3.5rem;
-  }
-  header #waveformHome {
-    max-width: 100%;
-    height: 55%;
-  }
-  header #waveFormHomeRight {
-    display: none;
-  }
-  header .bodyHeader h1 {
-    font-size: 2.8rem;
-  }
-  header .bodyHeader #smallTextHome {
-    font-size: 1rem;
-    margin-top: 0.8rem;
-  }
-  header .bodyHeader #bigTextHome {
-    font-size: 1.4rem;
-    margin-top: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
