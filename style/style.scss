@@ -202,7 +202,7 @@ footer img {
 }
 
 //! MOBILE
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
 	section {
 		// LAST CHANGE
 		height: auto; //  HERE
@@ -310,5 +310,17 @@ footer img {
 
 	.image {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 1200px) {
+	header {
+		#waveFormHomeRight {
+			display: none;
+		}
+
+		#waveformHome {
+			width: 100%;
+		}
 	}
 }
