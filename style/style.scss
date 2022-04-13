@@ -25,7 +25,7 @@ header {
 	#waveformHome {
 		position: absolute;
 		bottom: 0;
-		height: 45%;
+		left: 0;
 	}
 
 	#waveFormHomeRight {
@@ -139,6 +139,7 @@ section {
 		bottom: 0;
 		right: 0;
 		opacity: 0.8;
+		width: 100%;
 	}
 
 	.waveFormLeft {
@@ -146,6 +147,7 @@ section {
 		bottom: 0;
 		left: 0;
 		opacity: 0.8;
+		width: 100%;
 	}
 }
 
@@ -204,20 +206,17 @@ footer img {
 //! SMALL MOBILE PHONE
 @media screen and (min-width: 0px) and (max-width: 300px) {
 	section {
-		// LAST CHANGE
-		height: 100vh; //  HERE
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 3rem;
 
 		.left {
-			// background-color: rgba(255, 145, 0, 0.459);
 			height: 100vh;
 			padding-left: 3rem;
 		}
 
 		.right {
-			// background-color: rgba(128, 128, 128, 0.541);
 			height: 100vh;
 		}
 
@@ -318,19 +317,16 @@ footer img {
 //! MOBILE
 @media screen and (min-width: 300px) and (max-width: 550px) {
 	section {
-		// LAST CHANGE
-		height: auto; //  HERE
+		height: auto;
 		display: flex;
 		flex-direction: column;
 
 		.left {
-			// background-color: rgba(255, 145, 0, 0.459);
 			height: 100vh;
 			padding-left: 3rem;
 		}
 
 		.right {
-			// background-color: rgba(128, 128, 128, 0.541);
 			height: 100vh;
 		}
 

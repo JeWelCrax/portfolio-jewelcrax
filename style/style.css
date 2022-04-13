@@ -18,7 +18,7 @@ header {
 header #waveformHome {
   position: absolute;
   bottom: 0;
-  height: 45%;
+  left: 0;
 }
 
 header #waveFormHomeRight {
@@ -125,6 +125,7 @@ section .waveFormRight {
   bottom: 0;
   right: 0;
   opacity: 0.8;
+  width: 100%;
 }
 
 section .waveFormLeft {
@@ -132,6 +133,7 @@ section .waveFormLeft {
   bottom: 0;
   left: 0;
   opacity: 0.8;
+  width: 100%;
 }
 
 nav {
