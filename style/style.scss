@@ -201,8 +201,122 @@ footer img {
 	opacity: 0.7;
 }
 
+//! SMALL MOBILE PHONE
+@media screen and (min-width: 0px) and (max-width: 300px) {
+	section {
+		// LAST CHANGE
+		height: 100vh; //  HERE
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 3rem;
+
+		.left {
+			// background-color: rgba(255, 145, 0, 0.459);
+			height: 100vh;
+			padding-left: 3rem;
+		}
+
+		.right {
+			// background-color: rgba(128, 128, 128, 0.541);
+			height: 100vh;
+		}
+
+		.left,
+		.right {
+			padding-left: 1.5rem;
+			padding-right: 1rem;
+		}
+
+		.textUnderline {
+			text-decoration: underline;
+		}
+
+		.text {
+			display: flex;
+			justify-content: center;
+			align-items: left;
+			flex-direction: column;
+		}
+
+		.waveFormRight {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			max-width: 100%;
+			opacity: 0.6;
+		}
+
+		.waveFormLeft {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			max-width: 100%;
+			opacity: 0.6;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+	}
+
+	.skills {
+		.text {
+			height: 120rem;
+		}
+	}
+
+	nav {
+		height: 12vh;
+		ul {
+			li img {
+				height: 2.8rem;
+			}
+
+			li:first-of-type,
+			li:last-of-type {
+				margin: auto;
+			}
+		}
+	}
+
+	// Header
+	header {
+		#waveformHome {
+			max-width: 100%;
+			height: 55%;
+			z-index: -1;
+		}
+
+		.bodyHeader {
+			h1 {
+				font-size: 1.4rem;
+			}
+
+			#smallTextHome {
+				font-size: 1rem;
+				margin-top: 0.4rem;
+				margin-bottom: 1rem;
+			}
+
+			#bigTextHome {
+				font-size: 1rem;
+				margin-left: 2rem;
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	.image {
+		display: none;
+	}
+}
+
 //! MOBILE
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 300px) and (max-width: 550px) {
 	section {
 		// LAST CHANGE
 		height: auto; //  HERE
@@ -284,11 +398,6 @@ footer img {
 			z-index: -1;
 		}
 
-		#waveFormHomeRight {
-			display: none;
-			z-index: -2;
-		}
-
 		.bodyHeader {
 			h1 {
 				font-size: 2.2rem;
@@ -315,12 +424,15 @@ footer img {
 
 @media screen and (min-width: 551px) and (max-width: 1200px) {
 	header {
-		#waveFormHomeRight {
-			display: none;
-		}
-
 		#waveformHome {
 			width: 100%;
 		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#waveFormHomeRight {
+		display: none;
+		z-index: -2;
 	}
 }

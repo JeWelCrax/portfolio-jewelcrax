@@ -193,7 +193,105 @@ footer img {
   opacity: 0.7;
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0px) and (max-width: 300px) {
+  section {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  section .left {
+    height: 100vh;
+    padding-left: 3rem;
+  }
+  section .right {
+    height: 100vh;
+  }
+  section .left,
+  section .right {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+  section .textUnderline {
+    text-decoration: underline;
+  }
+  section .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .waveFormRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    opacity: 0.6;
+  }
+  section .waveFormLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    opacity: 0.6;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  section p {
+    font-size: 1.1rem;
+  }
+  .skills .text {
+    height: 120rem;
+  }
+  nav {
+    height: 12vh;
+  }
+  nav ul li img {
+    height: 2.8rem;
+  }
+  nav ul li:first-of-type,
+  nav ul li:last-of-type {
+    margin: auto;
+  }
+  header #waveformHome {
+    max-width: 100%;
+    height: 55%;
+    z-index: -1;
+  }
+  header .bodyHeader h1 {
+    font-size: 1.4rem;
+  }
+  header .bodyHeader #smallTextHome {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  header .bodyHeader #bigTextHome {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
   section {
     height: auto;
     display: -webkit-box;
@@ -269,10 +367,6 @@ footer img {
     height: 55%;
     z-index: -1;
   }
-  header #waveFormHomeRight {
-    display: none;
-    z-index: -2;
-  }
   header .bodyHeader h1 {
     font-size: 2.2rem;
   }
@@ -292,11 +386,15 @@ footer img {
 }
 
 @media screen and (min-width: 551px) and (max-width: 1200px) {
-  header #waveFormHomeRight {
-    display: none;
-  }
   header #waveformHome {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #waveFormHomeRight {
+    display: none;
+    z-index: -2;
   }
 }
 /*# sourceMappingURL=style.css.map */
