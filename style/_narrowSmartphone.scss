@@ -1,0 +1,110 @@
+//! SMALL MOBILE PHONE
+@media screen and (min-width: 0px) and (max-width: 300px) {
+	section {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 3rem;
+
+		.left {
+			height: 100vh;
+			padding-left: 3rem;
+		}
+
+		.right {
+			height: 100vh;
+		}
+
+		.left,
+		.right {
+			padding-left: 1.5rem;
+			padding-right: 1rem;
+		}
+
+		.textUnderline {
+			text-decoration: underline;
+		}
+
+		.text {
+			display: flex;
+			justify-content: center;
+			align-items: left;
+			flex-direction: column;
+		}
+
+		.waveFormRight {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			max-width: 100%;
+			opacity: 0.6;
+		}
+
+		.waveFormLeft {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			max-width: 100%;
+			opacity: 0.6;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+	}
+
+	.skills {
+		.text {
+			height: 120rem;
+		}
+	}
+
+	nav {
+		height: 12vh;
+		ul {
+			li img {
+				height: 2.8rem;
+			}
+
+			li:first-of-type,
+			li:last-of-type {
+				margin: auto;
+			}
+		}
+	}
+
+	// Header
+	header {
+		#waveformHome {
+			max-width: 100%;
+			height: 55%;
+			z-index: -1;
+		}
+
+		.bodyHeader {
+			h1 {
+				font-size: 1.4rem;
+			}
+
+			#smallTextHome {
+				font-size: 1rem;
+				margin-top: 0.4rem;
+				margin-bottom: 1rem;
+			}
+
+			#bigTextHome {
+				font-size: 1rem;
+				margin-left: 2rem;
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	.image {
+		display: none;
+	}
+}

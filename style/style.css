@@ -7,8 +7,33 @@
   font-family: "Poppins", sans-serif;
 }
 
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.image img {
+  width: 80%;
+}
+
 #landscape {
   display: none;
+}
+
+footer img {
+  position: fixed;
+  right: 0.5%;
+  bottom: 1%;
+  height: 5vh;
+  opacity: 0.7;
 }
 
 header {
@@ -172,31 +197,6 @@ nav ul li img {
 nav ul li:last-of-type {
   text-align: right;
   margin-right: 2rem;
-}
-
-.image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
-}
-
-.image img {
-  width: 80%;
-}
-
-footer img {
-  position: fixed;
-  right: 0.5%;
-  bottom: 1%;
-  height: 5vh;
-  opacity: 0.7;
 }
 
 @media screen and (min-width: 0px) and (max-width: 300px) {
@@ -391,19 +391,6 @@ footer img {
   }
 }
 
-@media screen and (min-width: 551px) and (max-width: 1200px) {
-  header #waveformHome {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #waveFormHomeRight {
-    display: none;
-    z-index: -2;
-  }
-}
-
 @media screen and (max-width: 950px) and (max-height: 450px) {
   #landscape {
     display: block;
@@ -424,6 +411,19 @@ footer img {
   section,
   footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1200px) {
+  header #waveformHome {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #waveFormHomeRight {
+    display: none;
+    z-index: -2;
   }
 }
 /*# sourceMappingURL=style.css.map */
