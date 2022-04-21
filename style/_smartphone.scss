@@ -6,12 +6,7 @@
 		flex-direction: column;
 
 		.left {
-			height: 100vh;
 			padding-left: 3rem;
-		}
-
-		.right {
-			height: 100vh;
 		}
 
 		.left,
@@ -20,29 +15,12 @@
 			padding-right: 3rem;
 		}
 
-		.textUnderline {
-			text-decoration: underline;
-		}
-
-		.text {
-			display: flex;
-			justify-content: center;
-			align-items: left;
-			flex-direction: column;
-		}
-
 		.waveFormRight {
-			position: absolute;
-			bottom: 0;
-			right: 0;
 			max-width: 100%;
 			opacity: 0.6;
 		}
 
 		.waveFormLeft {
-			position: absolute;
-			bottom: 0;
-			left: 0;
 			max-width: 100%;
 			opacity: 0.6;
 		}
@@ -57,7 +35,6 @@
 	}
 
 	nav {
-		height: 12vh;
 		ul {
 			li img {
 				height: 3.5rem;
