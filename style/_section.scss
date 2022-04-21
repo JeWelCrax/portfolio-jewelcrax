@@ -1,6 +1,5 @@
 section {
-	// LAST CHANGE
-	height: 85vh; //  HERE
+	height: 85vh;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
@@ -35,7 +34,6 @@ section {
 
 
 	.right, .left {
-		// background-color: rgba(128, 128, 128, 0.541);
 		height: 100vh;
 	}
 
