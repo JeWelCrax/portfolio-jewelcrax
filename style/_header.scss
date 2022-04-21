@@ -5,16 +5,18 @@ header {
 	position: relative;
 
 	#waveformHome {
-		position: absolute;
-		bottom: 0;
 		left: 0;
 	}
 
 	#waveFormHomeRight {
-		position: absolute;
-		bottom: 0;
 		right: 0;
 		height: 50%;
+	}
+
+	#waveformHome,
+	#waveFormHomeRight {
+		position: absolute;
+		bottom: 0;
 	}
 
 	.bodyHeader {

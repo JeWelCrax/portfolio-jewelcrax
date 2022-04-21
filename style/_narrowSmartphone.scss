@@ -7,16 +7,12 @@
 		padding-bottom: 3rem;
 
 		.left {
-			height: 100vh;
 			padding-left: 3rem;
-		}
-
-		.right {
-			height: 100vh;
 		}
 
 		.left,
 		.right {
+			height: 100vh;
 			padding-left: 1.5rem;
 			padding-right: 1rem;
 		}
@@ -33,17 +29,17 @@
 		}
 
 		.waveFormRight {
-			position: absolute;
-			bottom: 0;
 			right: 0;
-			max-width: 100%;
-			opacity: 0.6;
 		}
 
 		.waveFormLeft {
+			left: 0;
+		}
+
+		.waveFormRight,
+		.waveFormLeft {
 			position: absolute;
 			bottom: 0;
-			left: 0;
 			max-width: 100%;
 			opacity: 0.6;
 		}
@@ -91,15 +87,18 @@
 			}
 
 			#smallTextHome {
-				font-size: 1rem;
 				margin-top: 0.4rem;
 				margin-bottom: 1rem;
 			}
 
 			#bigTextHome {
-				font-size: 1rem;
 				margin-left: 2rem;
 				margin-right: 2rem;
+			}
+
+			#smallTextHome,
+			#bigTextHome {
+				font-size: 1rem;
 			}
 		}
 	}
