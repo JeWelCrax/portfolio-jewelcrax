@@ -6,11 +6,13 @@ header {
 
 	#waveformHome {
 		left: 0;
+		z-index: -10;
 	}
 
 	#waveFormHomeRight {
 		right: 0;
 		height: 50%;
+		z-index: -20;
 	}
 
 	#waveformHome,

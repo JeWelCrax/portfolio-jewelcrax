@@ -46,11 +46,13 @@ header {
 
 header #waveformHome {
   left: 0;
+  z-index: -10;
 }
 
 header #waveFormHomeRight {
   right: 0;
   height: 50%;
+  z-index: -20;
 }
 
 header #waveformHome,
