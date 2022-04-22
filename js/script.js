@@ -1,16 +1,22 @@
 "use strict";
 
 const init = () => {
-  const projects = document.getElementById("projects");
-  const contact = document.getElementById("contact");
+	alert(
+		"IMPORTANT!\n\nThis website is constanly updating, so it may be possible that some pages, animations or transitions are not visible/available."
+	);
 
-  projects.onclick = () => {
-    alert("Coming soon :)");
-  };
+	alert("Enjoy your visit!");
 
-  contact.onclick = () => {
-    alert("Coming soon :)");
-  };
+	const projects = document.getElementById("projects");
+	const contact = document.getElementById("contact");
+
+	projects.onclick = () => {
+		alert("Coming soon :)");
+	};
+
+	contact.onclick = () => {
+		alert("Coming soon :)");
+	};
 };
 
 window.onload = init;
