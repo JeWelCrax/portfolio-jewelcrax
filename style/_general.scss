@@ -1,4 +1,4 @@
-// Colour pallet
+// Defining the colour pallet and font-sizes that are used on the website.
 $blue: #200d97;
 $darkpink: #440150;
 $red: #d92a2a;
@@ -6,6 +6,7 @@ $text: #000000;
 $fontsizeH2: 4rem;
 $fontsizeP: 1.4rem;
 
+/* Setting the default styling for the website. */
 * {
 	scroll-behavior: smooth;
 	margin: 0;
@@ -14,6 +15,7 @@ $fontsizeP: 1.4rem;
 	font-family: "Poppins", sans-serif;
 }
 
+/* Centering the image and adding a width to the image. */
 .image {
 	display: flex;
 	justify-content: center;
@@ -25,6 +27,7 @@ $fontsizeP: 1.4rem;
 	}
 }
 
+/* Hiding the image with the id of landscape. */
 #landscape {
 	display: none;
 }

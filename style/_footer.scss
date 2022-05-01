@@ -1,4 +1,7 @@
-// Footer
+// Setting the position of the image to fixed, so that it will stay in the same place when the page is
+// scrolled. It is also setting the right and bottom margins to 0.5% and 1% respectively. It is also
+// setting the height of the image to 5vh, which is 5% of the viewport height. Finally, it is setting
+// the opacity of the image to 0.7.
 footer img {
 	position: fixed;
 	right: 0.5%;
