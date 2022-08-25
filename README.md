@@ -1,3 +1,3 @@
-# Portfolio2.0
+# JeWelCrax' Posponed Portfolio
 
-Postponed project due to exams
+Version 1.0.6
