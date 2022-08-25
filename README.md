@@ -1,3 +1,3 @@
-# JeWelCrax' Posponed Portfolio
+# JeWelCrax' Postponed Portfolio
 
-Version 1.0.6
+This project is still in progress
