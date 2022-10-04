@@ -1,29 +1,25 @@
+/* Importing the SCSS files into the style.scss file. */
+/* Setting the default styling for the website. */
 * {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
+/* Centering the image and adding a width to the image. */
 .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
 }
-
 .image img {
   width: 80%;
 }
 
+/* Hiding the image with the id of landscape. */
 #landscape {
   display: none;
 }
@@ -38,129 +34,98 @@ footer img {
 
 header {
   height: 88vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 header #waveformHome {
   left: 0;
   z-index: -10;
 }
-
 header #waveFormHomeRight {
   right: 0;
   height: 50%;
   z-index: -20;
 }
-
 header #waveformHome,
 header #waveFormHomeRight {
   position: absolute;
   bottom: 0;
 }
-
 header .bodyHeader {
   width: 100%;
   height: 100%;
   padding-top: 10rem;
   position: relative;
 }
-
 header .bodyHeader h1 {
   margin: 0;
   font-size: 5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(180deg, #d700fd, rgba(32, 13, 151, 0.69));
+  /* Creating a gradient background for the text. */
+  background: -webkit-linear-gradient(180deg, rgb(215, 0, 253), rgba(32, 13, 151, 0.69));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 header .bodyHeader h1,
 header .bodyHeader p {
   text-align: center;
 }
-
 header .bodyHeader #bigTextHome {
   font-size: 2rem;
   margin-top: 0.5rem;
   letter-spacing: 0.55rem;
 }
-
 header .bodyHeader #smallTextHome {
   letter-spacing: 0.1rem;
 }
 
 section {
   height: 85vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-
 section strong {
-  background: -webkit-linear-gradient(180deg, #a30dbc, rgba(151, 13, 121, 0.69));
+  background: -webkit-linear-gradient(180deg, rgb(163, 13, 188), rgba(151, 13, 121, 0.69));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 section h2 {
   font-size: 4rem;
   text-decoration: underline;
-  background: -webkit-linear-gradient(180deg, #a30dbc, rgba(32, 13, 151, 0.69));
+  background: -webkit-linear-gradient(180deg, rgb(163, 13, 188), rgba(32, 13, 151, 0.69));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 section p {
   font-size: 1.4rem;
 }
-
 section h2,
 section p {
   padding-bottom: 2rem;
 }
-
 section .right,
 section .left {
   height: 100vh;
 }
-
 section .left {
   padding-left: 3rem;
 }
-
 section .textUnderline {
   text-decoration: underline;
 }
-
 section .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
   position: relative;
 }
-
 section .waveFormRight {
   right: 0;
 }
-
 section .waveFormLeft {
   left: 0;
 }
-
 section .waveFormRight,
 section .waveFormLeft {
   position: absolute;
@@ -172,32 +137,24 @@ section .waveFormLeft {
 nav {
   height: 12vh;
 }
-
 nav ul {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
-
 nav ul li:first-of-type {
   text-align: left;
   margin-left: 2rem;
 }
-
 nav ul li img {
   height: 2.8rem;
 }
-
 nav ul li:last-of-type {
   text-align: right;
   margin-right: 2rem;
@@ -206,20 +163,15 @@ nav ul li:last-of-type {
 @media screen and (min-width: 0px) and (max-width: 300px) {
   section {
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-bottom: 3rem;
   }
   section .left {
     padding-left: 3rem;
   }
   section .left,
-  section .right {
+section .right {
     height: 100vh;
     padding-left: 1.5rem;
     padding-right: 1rem;
@@ -228,19 +180,10 @@ nav ul li:last-of-type {
     text-decoration: underline;
   }
   section .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
   }
   section .waveFormRight {
     right: 0;
@@ -249,7 +192,7 @@ nav ul li:last-of-type {
     left: 0;
   }
   section .waveFormRight,
-  section .waveFormLeft {
+section .waveFormLeft {
     position: absolute;
     bottom: 0;
     max-width: 100%;
@@ -271,7 +214,7 @@ nav ul li:last-of-type {
     height: 2.8rem;
   }
   nav ul li:first-of-type,
-  nav ul li:last-of-type {
+nav ul li:last-of-type {
     margin: auto;
   }
   header #waveformHome {
@@ -291,32 +234,26 @@ nav ul li:last-of-type {
     margin-right: 2rem;
   }
   header .bodyHeader #smallTextHome,
-  header .bodyHeader #bigTextHome {
+header .bodyHeader #bigTextHome {
     font-size: 1rem;
   }
   .image {
     display: none;
   }
 }
-
 @media screen and (min-width: 300px) and (max-width: 550px) {
   section {
     height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   section .left,
-  section .right {
+section .right {
     padding-left: 3rem;
     padding-right: 3rem;
   }
   section .waveFormRight,
-  section .waveFormLeft {
+section .waveFormLeft {
     max-width: 100%;
     opacity: 0.6;
   }
@@ -330,7 +267,7 @@ nav ul li:last-of-type {
     height: 3.5rem;
   }
   nav ul li:first-of-type,
-  nav ul li:last-of-type {
+nav ul li:last-of-type {
     margin: auto;
   }
   header #waveformHome {
@@ -355,7 +292,6 @@ nav ul li:last-of-type {
     display: none;
   }
 }
-
 @media screen and (max-width: 950px) and (max-height: 450px) {
   #landscape {
     display: block;
@@ -364,31 +300,27 @@ nav ul li:last-of-type {
     text-align: center;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     letter-spacing: 0.8rem;
-    background: -webkit-linear-gradient(180deg, #a30dbc, rgba(32, 13, 151, 0.69));
+    background: -webkit-linear-gradient(180deg, rgb(163, 13, 188), rgba(32, 13, 151, 0.69));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   nav,
-  header,
-  section,
-  footer {
+header,
+section,
+footer {
     display: none;
   }
 }
-
 @media screen and (min-width: 551px) and (max-width: 1200px) {
   header #waveformHome {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 1200px) {
   #waveFormHomeRight {
     display: none;
     z-index: -2;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
