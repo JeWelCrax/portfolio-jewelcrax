@@ -1,2 +1,2 @@
 # Portfolio
-> This project is still in progress...
+> Obsolete
